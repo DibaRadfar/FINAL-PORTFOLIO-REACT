@@ -83,12 +83,11 @@ function Navbar() {
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-lg text-muted-foreground hover:text-foreground py-2 transition-colors"
-                  target="_blank"
                 >
                   {link.label}
                 </a>
               ))}
-              <Link to="/login" onClick={() => setIsMobileMenuOpen(false)} target="_blank">
+              <Link to="/login" onClick={() => setIsMobileMenuOpen(false)}>
                 <Button className="w-full">Contact Me</Button>
               </Link>
             </div>
